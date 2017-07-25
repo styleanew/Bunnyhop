@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Bunnyhop Bike</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="/Content/Site.css">
+    <link rel="stylesheet" href="/Content/bootstrap.css">
+    @*<link rel="=stylesheet" href="~/Content/bootstrap.min.css">*@
+    <link rel="stylesheet" href="/Content/cart.css">
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/app/main.js"></script>
+    <script src="~/app/app.js"></script>
+    <script src="~/app/app.module.js"></script>
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/BunnyScripts/bunnystart.js" ></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="~/Scripts/Cart/simpleCart.min.js" ></script>
+
+    @*<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>*@
+
+    <script>
+        angular.element(document).ready(function () {
+            angular.bootstrap(document, ['spice']);
+        });
+    </script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header" style="margin-right:10px">                
+                <img style="animation-duration:6s"  src="~/Content/Images/thbunny_sml.GIF" />
+            </div>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>   
+                
+                @Html.ActionLink("Bunnyhop Bike", "Index", "Home", new { area="Bunnytitle"}, new { @class = "navbar-brand" })          
+                </div>        
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+
+                 
+                </div>
+
+            <div class="simpleCart_navbar">
+                Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+                <br />
+                <a href="javascript:;" class="simpleCart_empty">empty cart</a>
+                <br />
+            </div>
+            </div>
+
+
+           
+
+
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Bunnyhop Bike</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

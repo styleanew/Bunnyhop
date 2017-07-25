@@ -1,0 +1,35 @@
+﻿.simpleCart_total {
+    text-decoration-color:yellow;
+    color:white;
+    text-align:right;
+
+  font-size: 12px;
+  line-height: 4px;  
+  font-style:oblique;
+  font-weight:bold;
+}
+
+.simpleCart_quantity {
+    color:white;
+  font-size: 12px;
+  line-height: 6px;  
+  font-style:oblique;
+  font-weight:bold;
+}
+
+.simpleCart_empty {
+        color:white;
+  font-size: 12px;
+  line-height: 6px;  
+  font-style:oblique;
+  font-weight:bold;
+}
+
+.simpleCart_navbar {
+    color:white;
+    float: right !important;
+
+    vertical-align:central;
+    margin-top:0px;
+    display:inline;
+}

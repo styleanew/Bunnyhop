@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+ <!-- <div class="jumbotron">  
+    <canvas  > </canvas>
+    <img class="img-rounded"  style='padding-top: 2px; margin-top:2px; height: 50%; width: 70%; object-fit: contain; opacity:0.85; filter:alpha(opacity=85)' src="~/Content/Images/Fuji_LVWA.JPG" /> 
+</div> -->
+
+ <div class="content-container" >
+
+     @Html.Partial("AccordionView")
+     @*@Html.Partial("VerticalCollapse");*@
+
+        @*<div class="banner">
+            <a>*@
+               @* <img src="/Content/Images/Fuji_LVWA.JPG" alt="Picture"*@
+                 @*style="width:auto;max-width:100%" >*@ 
+            @*</a>
+        </div>*@
+     <div style="min-height:40px"></div>
+</div>
+
+
+<div style="min-width:400px; min-height:30px" >
+    <ul>
+        <li class="simpleCart_shelfItem">
+            <h2 class="item_name">Zebra</h2>
+            @*<img class="item_thumb" src="e.png" />*@
+            <span class="item_price">$187.95</span>
+            <select class="item_Size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <input type="checkbox" class="item_color" value="Blue" /><label>Blue</label>
+            <input type="checkbox" class="item_color" value="Yellow" /><label>Yellow</label>
+            <input type="checkbox" class="item_color" value="Red" /><label>Red</label>
+
+            <input type="hidden" class="item_shipping" value="20" />
+            <input type="text" class="item_quantity" value="1" />
+            <input type="button" class="item_add" value="add to cart" />
+        </li>
+        </ul>
+</div>
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Get Parts List
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a onclick="initBunnyHome()"> QUERY </a> </li>
+        <li><a href="#">Crank Sets</a></li>
+        <li><a href="#">Brakes</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Accessories</a></li>
+    </ul>
+</div>
+
+
+<div style="min-width:400px; min-height:30px">
+
+</div>
+
+
+    @*<script>
+      var nameApp = angular.module('nameApp', []);
+      nameApp.controller('NameCtrl', function ($scope
+
+        $scope.name.first = 'John';
+        $scope.name.last = 'Smith';
+      });
+    </script>*@
+
+@*<div ng-controller="NameCtrl">
+    First name:<input ng-model="name.first" type="text" />
+    <br>
+    Last name:<input ng-model="name.last" type="text" />
+    <br>
+    Hello {{name.first}} {{name.last}}
+</div>*@
+
+<div  ng-controller="SpicyController">
+<button ng-click="chili()">Chili</button>
+<button ng-click="jalap()">Jalap</button>
+<p>The food is {{spice}} spicy</p>
+</div>
+
+@*<div ng-controller="ExampleController">
+    <form name="userForm">
+        <label>
+            Name:
+            <input type="text" name="userName"
+                   ng-model="user.name"
+                   ng-model-options="{ getterSetter: true }" />
+        </label>
+    </form>
+    <pre>user.name = <span ng-bind="user.name()"></span></pre>
+</div>*@
+
+<div>
+    <input type="text" ng-model="vm.name" placeholder="Enter name" />
+
+    <p>Hello B {{vm.name}}!</p>
+</div>
+
+
+<div>
+    <input type="text" ng-model="vm.food" placeholder="Enter food" />
+
+    <p>Sriracha sauce is great with {{vm.food}}!</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>E-bike parts</h2>
+        <p>Look at comparisons and reviews about bicycle parts before you buy.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>COCO </h2>
+        <p>College Corner:</p>
+        <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" > 
+                COCO
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" >
+                <li><a href="#">Conversion</a> </li>
+                <li><a href="#">Enhancement</a></li>
+                <li><a href="#">Troubleshooting</a></li>
+                <li class="divider"></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <br /> <br /> <br /> <br /> <br />
+        <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                Dev-Room
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Angular vs Knockout</a></li>
+                <li><a href="#">JavaScript design patterns</a></li>
+                <li><a href="#">Dependency injection</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Big O sorting</a></li>
+            </ul>
+        </div>
+
+        @*<h2>Dev-Room [hidden]</h2>
+            <p>Try this and that and share tech stuff.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>*@
+
+        @*<div class="col-md-4">
+                <h2>Angular vs Knockout</h2>
+                <p>
+                    Proverbial battle royal between a dirty launcher and a dependency tracker.
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+            </div>*@
+
+    </div>
+</div>

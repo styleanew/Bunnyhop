@@ -1,0 +1,39 @@
+﻿.home #header #TrilogyLogo {position: absolute; top: 18px; left: 42px; display: block; width: 148px; height: 48px; background: transparent  no-repeat 0 0; text-indent: -9999px;}
+#findNocBox {display: none; position: absolute; top: 71px; left: 7px; height: 339px; background: #fff url(/images/bg_banner.jpg) no-repeat 0 0; width: 960px;}
+#findNocBox div {padding: 20px 50px;}
+#findNocBox div h2 {color: #0076a3; font-size: 14px; line-height: 22px;}
+.home #banner {position: relative; padding: 0 1px 0 0; height: 338px; overflow: hidden;}
+.home #banner {background: transparent url(/images/bg_banner.jpg) no-repeat 0 0; padding: 0 15px 2px 144px;}
+.home #banner h1 {width: 158px; height: 148px; float: left; margin: 58px 0 0 0; background: #fff url(/images/home_logo.gif) no-repeat 0 0; text-align: left; text-indent: -9999px;}
+.home #flower {float: right; width: 616px; height: 339px;}
+
+.home #contentWrapper {background: transparent url(/images/bg_col3.jpg) repeat-y 0 0;}
+.home #contentWrapper #content {background: transparent url(/images/home_banner_bottom.jpg) no-repeat 0 0; padding: 35px 0 0 14px;}
+
+.home #contentWrapper #content #main {width: 280px; padding: 0 5px 0 22px; margin: 0;}
+.home #contentWrapper #content #left, .home #contentWrapper #content #right {width: 280px; padding: 0 5px 0 22px;}
+
+.home #contentWrapper #content .col {width: 280px; float: left; padding: 0 5px 0 22px;}
+.home #contentWrapper #content .col h2, .home #contentWrapper #content #main h2, .home #contentWrapper #content #right h2 {color: #333; font-family: futura, helvetica, arial, sans-serif; font-size: 16px; text-transform: uppercase; font-weight: normal; padding-left: 13px;}
+.home #contentWrapper #content #main h2 {margin: 0 0 10px 0; padding: 0;}
+.home #contentWrapper #content #main p {font-size: 15px; line-height: 22px;}
+.home #contentWrapper #content .col div {background: transparent url(/images/content_hr.png) no-repeat left bottom; padding: 0 15px 10px 13px; margin: 15px 0; color: #000;}
+.home #contentWrapper #content .col div:last-child {background: transparent url() no-repeat left bottom;}
+.home #contentWrapper #content .col div span {display: block; padding: 2px 50px 20px 10px; margin: 15px 0 0; font-size: 12px; line-height: 18px;}
+.home #contentWrapper #content .col div span.required {display: inline; padding: 0; margin: 0; font-size: 12px; line-height: 12px;}
+.home #contentWrapper #content .col div span a:link, .home #content ul li div span a:active, .home #content ul li div span a:visited {color: #0796ba; text-decoration: none;}
+.home #contentWrapper #content .col div span a:hover {color: #05cafc;}
+.home #contentWrapper #content .col div span.shelterfinder {background: transparent url(/images/icon_shelterfinder.jpg) no-repeat 0 0; padding-left: 70px;}
+.home #contentWrapper #content .col div span.android {background: transparent url(/images/icon_android.jpg) no-repeat 0 0; padding-left: 70px;}
+.home #contentWrapper #content .col div span.elearning {background: transparent url(/images/icon_elearning.jpg) no-repeat 0 0; padding-left: 70px;}
+.home #contentWrapper #content .col div span.search {padding: 0;margin: 0 0 20px 0;border: 1px solid #999;background-color: #fff;display: inline-block;height: 18px;}
+.home #contentWrapper #content .col div span.search table td {vertical-align: middle;}
+.home #contentWrapper #content .col div span.search input {padding: 0 0 0 5px;margin: 0;border: 0;font-size: 11px;width: 150px;}
+.home #contentWrapper #content .col div span.search input.btn {background: transparent url(/images/b_search.gif) no-repeat 0 0;width: 20px;height: 18px; cursor: pointer; cursor: hand;}
+.home #contentWrapper #content .col div span.testimonials {padding: 0;margin: 0 0 20px 0; text-align: right; color: #666; font-size: 11px; line-height: 13px;}
+.home #contentWrapper #content .col div span.testimonials p {text-align: left; color: #0076a3; font-size: 14px; line-height: 22px;}
+.home #contentWrapper #content .col div span.testimonials strong {display: block; font-weight: bold;}
+.home #contentWrapper #content .col div span.testimonials cite {display: block; font-style: italic;}
+.home #contentWrapper #content #right  {float: left; width: 300px; background-image: none;}
+.home #contentWrapper #content #main .moreText {display: none; padding: 0;}
+#demoform {display: none;}

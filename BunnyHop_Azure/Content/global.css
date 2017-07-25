@@ -1,0 +1,191 @@
+﻿body {text-align: center;color: #2B2B2B;background: #9db7c7 url(/images/bg.jpg) repeat-x 0 0;font-family: arial;font-size: 13px;}
+
+a:link, a:active, a:visited {color: #0796ba; text-decoration: none;}
+a:hover {color: #05cafc;}
+input {border: 1px solid #999;}
+.required {display: inline; color: #990000; font-weight: bold;}
+.fieldError {border: 1px solid #ff0000;}
+.small {font-size: 11px;}
+strong {font-weight: bold;}
+
+#wrapper {text-align: left;float: none;width: 974px;margin: 0 auto;}
+
+#page {position: relative;background: transparent url(/images/bg_page.png) repeat-y 0 0; padding: 0 7px 0 7px;}
+#pageBottom {clear: both;height: 11px;background: transparent url(/images/bg_page_bottom.png) no-repeat 0 0;}
+
+#header {height: 71px; padding-right: 30px;}
+#header #TrilogyLogo {position: absolute; top: 18px; left: 42px; display: block; width: 148px; height: 48px; background: transparent url(/images/logo_trilogy_small.gif) no-repeat 0 0; text-indent: -9999px;}
+
+#header #login {display: block; float: right; margin: 6px 0 21px 0;}
+#loginBox {display: none; position: absolute; font-size: 9px; top: 27px; right: 33px; width: 184px; height: 102px; background: transparent url(/images/login_box.png) no-repeat 0 0;}
+#loginBox input {width: 140px; border: 1px solid #999;}
+#loginBox input.btn {border: 0; width: 33px; height: 18px; background: transparent url(/images/b_go.gif) no-repeat 0 0; cursor: pointer; cursor:grab;}
+#loginBox table {margin: 10px 0 0 20px;}
+#loginBox table td {padding-bottom: 5px; vertical-align: top;}
+#loginBox a {display: block; margin-bottom: 5px;}
+
+#search {float: right;display: inline-block; padding: 0;margin: 6px 30px 0 0; border: 1px solid #999;background-color: #fff;height: 18px; width: 175px;}
+#search table td {vertical-align: middle;}
+#search input {padding: 0 0 0 5px;margin: 0;border: 0;font-size: 11px;width: 150px;}
+#search input.btn {background: transparent url(/images/b_search.gif) no-repeat 0 0;width: 20px;height: 18px; cursor: pointer; cursor:grab;}
+#search {display: none;}
+
+#topNav {clear: both; padding: 0 15px 0 0;margin: 0; float: right; width: auto;}
+#topNav li {display: block;float: left;padding: 0 17px;margin: 0; font-size: 14px;line-height: 13px;}
+#topNav li a {display: block; color: #666; text-decoration: none; padding: 0 0 2px 0;}
+#topNav li a:hover, #topNav li.sfhover {color: #00acec;}
+.home #Home a, .products #Products a, .partners #Partners a, 
+.press #Press a, .pressRelease #Press a, .awards #Press a, .testimonials #Press a, .president #Press a,
+.about #About a, .advisory #About a, .leadership #About a, .contact #Contact a {color: #00acec;}
+
+#topNav li:hover a {color: #00acec;}
+#topNav li ul {position: absolute;width: 209px;height: 170px;left: -999em;z-index: 100;background: transparent url(/images/bg_dropdown.png) no-repeat 0 0;padding: 15px 0 0;margin: 0;}
+#topNav li ul li {padding: 0;margin: 0;width: 201px;}
+#topNav li:hover ul, #topNav li.sfhover ul {left: auto; zoom: 1;}
+#topNav li ul li a:link, #topNav li ul li a:active, #topNav li ul li a:visited {display: block;padding: 7px 20px;margin: 0 2px;font-size: 12px;color: #333;zoom: 1;background-image: none;}
+#topNav li ul li a:hover {background-color: #d7d7d7; color: #333;}
+#topNav li a.active:link, #topNav li a.active:active, #topNav li a.active:visited {color: #00acec;}
+
+#banner {position: relative; padding: 0 1px 0 0; overflow: hidden; height: 259px; text-align: right;}
+#banner h2 {font-size: 14px; color: #006699; margin: 40px 320px 0 145px; line-height: 22px; font-weight: normal;}
+#banner h2 span {display: block; font-size: 12px; color: #333; text-align: right;}
+#banner.gov h2 {font-size: 18px; color: #006699; margin: 50px 410px 0 70px; line-height: 22px; font-weight: normal;}
+#banner.gov h2 span {display: block; font-size: 14px; color: #333; text-align: right;}
+#banner h2 strong {text-transform: uppercase; font-weight: bold;}
+#banner h2.large {font-size: 18px; color: #0076a3; margin: 85px 412px 0 210px; line-height: 22px; font-weight: normal;}
+
+#banner #prev {display: inline-block; width: 34px; height: 34px; text-align: left; text-indent: -9999px; position: absolute; top: 112px; left: 10px;background: transparent url(/images/slideshow_left.png) no-repeat 0 0; cursor: pointer; cursor: grab;}
+#banner #next {display: inline-block; width: 34px; height: 34px; text-align: left; text-indent: -9999px; position: absolute; top: 112px; right: 10px;background: transparent url(/images/slideshow_right.png) no-repeat 0 0; cursor: pointer; cursor: grab;}
+#banner #prev.hide, #banner #next.hide {display: none;}
+
+.govCA {background: #fff url(/images/banner_img_california.jpg) no-repeat 0 0;}
+.govCT {background: #fff url(/images/banner_img_gov_connecticut.jpg) no-repeat 0 0;}
+.govOR {background: #fff url(/images/banner_img_gov_oregon.jpg) no-repeat 0 0;}
+.govMD {background: #fff url(/images/banner_img_maryland.jpg) no-repeat 0 0;}
+.govNE {background: #fff url(/images/banner_img_nebraska.jpg) no-repeat 0 0;}
+.aguirre {background: #fff url(/images/banner_img_aguirre.jpg) no-repeat 0 0;}
+.neff {background: #fff url(/images/banner_img_neff.jpg) no-repeat 0 0;}
+.smith {background: #fff url(/images/banner_img_smith.jpg) no-repeat 0 0;}
+.maue {background: #fff url(/images/banner_img_maue.jpg) no-repeat 0 0;}
+.wengerd {background: #fff url(/images/banner_img_wengerd.jpg) no-repeat 0 0;}
+.refowitz {background: #fff url(/images/banner_img_refowitz.jpg) no-repeat 0 0;}
+.scherra {background: #fff url(/images/banner_img_scherra.jpg) no-repeat 0 0;}
+.shern {background: #fff url(/images/banner_img_shern.jpg) no-repeat 0 0;}
+.vonhorn {background: #fff url(/images/banner_img_vonhorn.jpg) no-repeat 0 0;}
+
+#contentWrapper {margin-bottom: 60px;}
+#contentWrapper #content {background: transparent url(/images/banner_bottom.jpg) no-repeat 0 0; padding: 15px 0 0 0;}
+#contentWrapper #content h1 {font-family: futura, helvetica, arial, sans-serif; font-size: 20px; font-weight: normal; text-align: center; color: #979b9f; padding-bottom: 14px; margin-bottom: 20px; background: transparent url(/images/hr.gif) no-repeat left bottom;}
+#contentWrapper #content p {margin-bottom: 15px;}
+#contentWrapper #content #left  {float: left; width: 186px; padding: 0 15px 0 20px;}
+#contentWrapper #content #main  {float: left; width: 390px; padding: 0 20px 0 0;}
+#contentWrapper #content #main.col1  {float: left; width: 590px; padding: 0 20px 0 221px;}
+#contentWrapper #content #main.col2  {float: left; width: 590px; padding: 0 20px 0 0;}
+#contentWrapper #content #right  {float: left; width: 270px; padding: 15px 30px 0 20px;background: transparent url(/images/bg_right.gif) repeat-y 0 0;}
+#contentWrapper #content #main h2 {color: #666; font-size: 18px; font-weight: bold; margin-bottom: 15px;}
+#contentWrapper #content #main h3 {color: #666; font-size: 14px; font-weight: bold; margin: 15px 0 10px;}
+
+#contentWrapper #content #left, #contentWrapper #content #main, #contentWrapper #content #right  {line-height: 20px;}
+
+#contentWrapper #content #right h2 {color: #666; font-size: 16px; text-transform: uppercase; font-weight: normal;}
+
+#contentWrapper #content #left ul {margin: 0 0 30px 35px;}
+#contentWrapper #content #left ul li {zoom: 1;}
+#contentWrapper #content #left ul li a:link, #contentWrapper #content #left ul li a:active, #contentWrapper #content #left ul li a:visited {display: block; color: #333; text-decoration: none; padding: 7px 5px 7px 15px;}
+#contentWrapper #content #left ul li a:hover {color: #0796ba;}
+
+.press #banner, .pressRelease #banner {height: 258px; background: #fff url(/images/banner_img_press.jpg) no-repeat 0 0;}
+.press #contentWrapper #content #left h2, .pressRelease #contentWrapper #content #left h2, .contact #contentWrapper #content #left h2 {color: #666; font-size: 18px; font-weight: bold; text-align: right;}
+.press #contentWrapper #content #left h2 span, .pressRelease #contentWrapper #content #left h2 span {font-size: 16px;}
+.press #contentWrapper #content #main h2 {font-size: 13px; font-weight: bold; margin-bottom: 10px;}
+
+#contentWrapper #content #left a.breadcrumb:link, #contentWrapper #content #left a.breadcrumb:active, 
+#contentWrapper #content #left a.breadcrumb:visited {display: block; color: #666; font-size: 18px; font-weight: bold; text-align: right;}
+#contentWrapper #content #left a.breadcrumb:hover {color: #00acec;}
+
+.pressRelease #contentWrapper #content #right h3 {color: #666; font-size: 12px; font-weight: bold;}
+.pressRelease #contentWrapper #content #right h3 span {display: block; font-size: 11px;}
+
+.press #contentWrapper #content #main h2 {margin-bottom: 10px;}
+.press #contentWrapper #content #main h2 span {display: block;}
+.press #contentWrapper #content #main p {margin-bottom: 35px; padding-right: 100px;}
+.press #contentWrapper #content #main h1, .pressRelease #contentWrapper #content #main h1 {color: #666; font-size: 16px; font-weight: bold; background-image: none;text-align: left;}
+
+.awards #banner {height: 258px; background: transparent url(/images/banner_img_awards.jpg) no-repeat 0 0;}
+.awards #banner h2 {margin: 82px 365px 0 116px;}
+.testimonials #banner {height: 258px; background: transparent url(/images/banner_img_testimonials.jpg) no-repeat 0 0;}
+.testimonials #banner h2 {margin: 78px 340px 0 221px;}
+.testimonials #main p {}
+.testimonials #main p span {display: block; text-align: right; font-size: 12px; font-weight: bold; margin: 0 0 40px 0; color: #666;}
+
+.president #banner {height: 258px; background: transparent url(/images/banner_img_president.jpg) no-repeat 0 0;}
+.president #banner h2 {margin: 82px 365px 0 116px;}
+.advisory #banner {height: 258px; background: transparent url(/images/banner_img_advisory.jpg) no-repeat 0 0;}
+.advisory #banner h2 {margin: 82px 365px 0 116px;}
+.leadership #banner {height: 258px; background: transparent url(/images/banner_img_advisory.jpg) no-repeat 0 0;}
+.leadership #banner h2 {margin: 82px 365px 0 116px;}
+.web #banner {background: transparent url(/images/banner_img_web.jpg) no-repeat 0 0;}
+.web #contentWrapper #content {padding: 33px 0 0 0;}
+
+.aboutpage #banner {background: transparent url(/images/banner_img_about.jpg) no-repeat 0 0;}
+.history #banner {background: transparent url(/images/banner_img_history.jpg) no-repeat 0 0;}
+.team #banner {background: transparent url(/images/banner_img_team.jpg) no-repeat 0 0;}
+.founders #banner {background: transparent url(/images/banner_img_founders.jpg) no-repeat 0 0;}
+.founders #banner h2 {margin: 65px 405px 0 50px;}
+
+.founders #main p, .advisory #main p, .leadership #main p {margin-bottom: 25px;}
+.founders #main img, .advisory #main img, .leadership #main img {float: left; margin: 0 20px 50px 0;}
+.founders #main h2, .advisory #main h2, .leadership #main h2 {margin: 0; font-weight: bold; font-size: 13px;}
+
+.contact #banner {height: 258px; background: #fff url(/images/banner_img_contact.jpg) no-repeat 0 0;}
+.contact #banner h2 {margin: 78px 295px 0 221px;}
+
+.leadership #contentWrapper #content #main .moreText {display: none; padding: 0;}
+
+#footer {}
+
+#globalFooter {color: #fff; text-align: center; font-size: 12px; margin: 25px 0 40px;}
+
+input.btnGrey {
+	background: #656565 url(/images/btnGrey.gif) repeat-x 0 0;
+	color: #fff;
+	padding: 2px 7px; 
+	height: 21px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 10px;
+	font-weight: bold;
+	cursor: pointer; cursor: grab;
+	border: 0;
+}
+
+a.btnGrey:link, a.btnGrey:active, a.btnGrey:visited {
+	display: inline-block;
+	background: #656565 url(/images/btnGrey.gif) repeat-x 0 0;
+	color: #fff;
+	padding: 5px 7px; 
+	text-align: center;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 10px;
+	font-weight: bold;
+}
+a.btnGrey:hover {color: #ccc;}
+
+div.expandCollapse {border: 1px solid #ccc; margin: 15px 0;}
+div.expandCollapse h2 {font-size: 13px; background: #ccc url(/images/bg_expandcollapse.gif) repeat-x 0 0; padding: 5px 12px 5px 9px; cursor: pointer;cursor: grab;}
+div.expandCollapse h2 a:link, div.expandCollapse h2 a:active, div.expandCollapse h2 a:visited, div.expandCollapse h2 a:hover {background: transparent url(/images/expandcollapse_closed.gif) no-repeat bottom right; display: block; zoom: 1;color: #666; font-weight: bold; text-transform: uppercase; text-decoration: none; padding-right: 17px;}
+div.expandCollapse h2 a.expandCollapseOpen:link, div.expandCollapse h2 a.expandCollapseOpen:active, div.expandCollapse h2 a.expandCollapseOpen:visited, div.expandCollapse h2 a.expandCollapseOpen:hover {background: transparent url(/images/expandcollapse_open.gif) no-repeat right bottom;}
+div.expandCollapse ul {display: none; margin: 18px 10px 0;}
+div.expandCollapse ul li {margin: 0 0 10px;}
+
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;font-size: 0;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac */
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+#simplemodal-container a.modalCloseImg {background:url(/images/x.png) no-repeat; width:25px;height:29px;display:inline;z-index:3200;position:absolute;top:-15px;right:-18px;cursor:pointer;}
+#simplemodal-container {padding: 10px;background-color: #fff;border: 1px solid #ccc;}

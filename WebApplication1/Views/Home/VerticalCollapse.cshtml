@@ -1,0 +1,498 @@
+﻿@{
+    ViewBag.Title = "VerticalCollapse";
+}
+
+<div id="wrapper">
+
+    <div id="page">
+        <div id="header" class="clearfix">
+            <a href="##" id="login" class="btnGrey">Client Log In</a>
+
+            <div id="search">
+                <fieldset class="submit">
+                    <table>
+                        <tr>
+                            <td><input name="ctl00$keyword" type="text" id="ctl00_keyword" placeholder="Type your keywords here" /></td>
+                            <td><input type="submit" name="ctl00$btnKeywordSearch" value="" id="ctl00_btnKeywordSearch" class="btn" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <a href="index.aspx" id="TrilogyLogo">Trilogy Integrated Resources</a>
+
+            <ul id="topNav">
+                <li id="Home"><a href="index.aspx">Home</a></li>
+                <li id="Products"><a href="products.aspx">Products & Services</a></li>
+                <li id="Partners"><a href="partners.aspx">Partners</a></li>
+                <li id="Press">
+                    <a href="press.aspx">Press</a>
+                    <ul>
+                        <li><a href="presidents-new-freedom-commission-on-mental-health.aspx">President's New Freedom Commission on Mental Health</a></li>
+                        <li><a href="leadership-comments.aspx">Leadership Comments</a></li>
+                        <li><a href="awards-recognition.aspx">Awards &amp; Recognition</a></li>
+                        <li><a href="testimonials.aspx">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li id="About">
+                    <a href="about.aspx">About Us</a>
+                    <ul>
+                        <li><a href="history.aspx">Our History</a></li>
+                        <li><a href="team.aspx">Our Team</a></li>
+                        <li><a href="founders.aspx">Our Founders</a></li>
+                        <li><a href="advisory-board.aspx">Our Advisors</a></li>
+                        <li><a href="clients.aspx">Our Clients</a></li>
+                    </ul>
+                </li>
+                <li id="Contact"><a href="contact.aspx">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="banner" class="clearfix">
+            <span id="prev" class="hide">Prev</span>
+            <span id="next" class="hide">Next</span>
+
+
+
+        </div>
+
+        <div id="contentWrapper" class="clearfix">
+            <div id="content" class="clearfix">
+
+                <div id="main" class="col">
+                   
+                    <p>
+                        we utilize the Internet for social good by providing local access to health and human
+                        services. Our mission is to make it as easy as possible for individuals and families to find all the relevant information
+                        they need online to make the best, most informed decisions regarding care in their lives.
+                    </p>
+
+                    <p>
+                        The Network of Care, our premier portal, offers government-sponsored Web sites that provide faster...
+                        <a href="##" class="btnMore">more &raquo;</a>
+                    </p>
+
+                    <div class="moreText">
+                        <p>
+                            The Network of Care, our premier portal, offers government-sponsored Web sites that provide faster, easier access
+                            to comprehensive community services, information, support, advocacy, news and assistance on a local level. Our state-of-the-art
+                            applications include a Call Center, eLearning technology, and the most comprehensive and current health data available, thus
+                            enabling policymakers and community stakeholders alike to make the best, most cost-effective decisions possible in areas
+                            ranging from BMI to obesity to alcohol consumption.
+                        </p>
+
+                        <p>
+                            What began in Sacramento and Alameda counties as an innovative online tool is now networked to millions of people
+                            nationwide and has become the top model of its kind in the United States.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="right" class="col">
+                    <h2>Testimonials</h2>
+                    <div>
+                        <span class="testimonials">
+                            
+                                The Network of Care has been a tremendous resource for both our staff and the folks we serve. The resources it
+                                places at our fingertips is amazing. It has been a great tool for seniors, the disabled, and their families to
+                                educate themselves, find resources and maximize options available to them. All of this helps them stay independent
+                                and live with dignity. We are tremendously pleased to be able to offer this to the people of San Diego.
+                        
+
+                            <strong>- PAMELA SMITH</strong><br>
+                            <cite>
+                                Director, Aging & Independence Services<br>
+                                County of San Diego CA
+                            </cite>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer" class="clearfix">
+
+        </div>
+
+        <div id="loginBox">
+            <fieldset class="submit">
+                <table>
+                    <tr>
+                        <td colspan="2"><input type="text" name="username" placeholder="User Name" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" name="password" placeholder="Password" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Forgot Password</a>
+                            <a href="">Create Account</a>
+                        </td>
+                        <td align="right"><input type="submit" name="ctl00$button1" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(/&quot;ctl00$button1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://mynetworkofcare.org/login.cfm&quot), false, false);" id="ctl00_button1" class="btn" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+
+        <link rel="stylesheet" type="text/css" href="../Content/findNoc.css">
+        <div id="findNocBox">
+            <ul class="findNocproducts">
+                <li id="product17">
+                    <div>
+                        <p>Combines information about local, state and federal programs; benefits; employment; education; TRICARE, and much more.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="stateVets">State:</label>
+                                <select id="stateVets" name="stateVets"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyVets">County:</label>
+                                <select id="countyVets" name="countyVets"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product3">
+                    <div>
+                        <p>Created for families of youth ages 0-5 and the agencies that assist them, the site focuses on access to information, communication and advocacy tools.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="stateKids">State:</label>
+                                <select id="stateKids" name="stateKids"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyKids">County:</label>
+                                <select id="countyKids" name="countyKids"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product2">
+                    <div>
+                        <p>Connects behavioral-health consumers and their families to the information they need.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+
+                            <p>
+                                <label for="stateMh">State:</label>
+                                <select id="stateMh" name="stateMh"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyMh">County:</label>
+                                <select id="countyMh" name="countyMh"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+
+                            <p id="pennsylvania2" class="mapSmall">
+                                <label>&nbsp;</label>
+                                <a href="mhPA" class="lnkMap">
+                                    
+                                    <label>&nbsp;</label>
+                                    View Map
+                                </a>
+                            </p>
+
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product5">
+                    <div>
+                        <p>Provides resources for at-risk youth and the families and agencies that support them.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="stateFam">State:</label>
+                                <select id="stateFam" name="stateFam"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyFam">County:</label>
+                                <select id="countyFam" name="countyFam"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product6">
+                    <div>
+                        <p>Built specifically for individuals with developmental disabilities and the families, caregivers, and agencies that assist them.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="stateDd">State:</label>
+                                <select id="stateDd" name="stateDd"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyDd">County:</label>
+                                <select id="countyDd" name="countyDd"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product8">
+                    <div>
+                        <p>Links domestic-violence survivors with resources that provide social services, shelter and safety.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="stateDv">State:</label>
+                                <select id="stateDv" name="stateDv"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyDv">County:</label>
+                                <select id="countyDv" name="countyDv"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product11">
+                    <div>
+                        <p>Provides key health indicators, data and information to community stakeholders, as well as to individuals and families.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="statePh">State:</label>
+                                <select id="statePh" name="statePh"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyPh">County:</label>
+                                <select id="countyPh" name="countyPh"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product12">
+                    <div>
+                        <p>Shares information with persons in the criminal-justice system, their families, and service providers.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="statePs">State:</label>
+                                <select id="statePs" name="statePs"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyPs">County:</label>
+                                <select id="countyPs" name="countyPs"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+                <li id="product1">
+                    <div>
+                        <p>Local resources and tools for seniors, adults with disabilities, caregivers and service providers.</p>
+
+                        <p>Select a state and county below:</p>
+
+                        <fieldset class="submit">
+                            <p>
+                                <label for="stateAging">State:</label>
+                                <select id="stateAging" name="stateAging"></select>
+                            </p>
+
+                            <p>
+                                <label for="countyAging">County:</label>
+                                <select id="countyAging" name="countyAging"></select>
+                            </p>
+
+                            <p>
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btnGrey" value="Go To Site" />
+                            </p>
+                        </fieldset>
+                    </div>
+                </li>
+            </ul>
+
+            <div style="clear:both;"></div>
+        </div>
+
+    </div>
+    <div id="pageBottom">&nbsp;</div>
+
+    <div id="globalFooter">
+        Copyright &copy;<span id="ctl00_copyrightYear">2016</span>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="~/Scripts/Collapsable/global.js" type="text/javascript"></script>
+<script src="~/Scripts/Collapsable/pngfix.js" type="text/javascript"></script>
+
+<script src="~/Scripts/Collapsable/home.js" type="text/javascript"></script>
+<script src="~/Scripts/Collapsable/jquery.kwicks-1.5.1.pack.js" type="text/javascript"></script>
+<script src="~/Scripts/Collapsable/findNoc.js" type="text/javascript"></script>
+<script src="~/Scripts/Collapsable/jquery.simplemodal.1.4.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#findNocBox").fadeToggle();
+
+		var newsletterUrl = "http://www.up0.net/functions/mailing_list.html";
+		$("#btnNewsletterSignup").bind("click", function(event) {
+			event.preventDefault();
+			var noErrors = true;
+
+			$("input.requiredField").removeClass("fieldError");
+			$("#newsletterFormErrorSummary").html("");
+
+			$("input.requiredField").each(function(index) {
+				if ($(this).val() == "") {
+					noErrors = false;
+					$(this).addClass("fieldError");
+				} else 
+				{
+					noErrors = false;
+					$(this).addClass("fieldError");
+				}
+			});
+
+			if (noErrors) {
+				document.forms[0].action = newsletterUrl;
+				document.forms[0].submit();
+			} else {
+				$("#newsletterFormErrorSummary").html("<br>Please enter an email address");
+			}
+		});
+	});
+</script>
+
+<div class="hidden">
+    <div id="mhPA">
+
+        <map name="paMap" id="paMap">
+            <area shape="poly" coords="120,57,15,57,16,38,103,1,101,36,121,37,120,57" href="http://erie.pa.networkofcare.org/mh/" alt="Erie County" />
+            <area shape="poly" coords="-189,267" href="#" alt="default"/>
+            <area shape="poly" coords="15,58,17,107,75,108,98,89,119,88,121,57,15,58" href="http://crawford.pa.networkofcare.org/mh/" alt="Crawford County" />
+            <area shape="poly" coords="16,107,17,157,53,158,64,166,75,150,76,109,16,107" href="http://mercer.pa.networkofcare.org/mh/" alt="Mercer County" />
+            <area shape="poly" coords="202,39,197,88,283,90,282,38,202,39" href="http://mckean.pa.networkofcare.org/mh/" alt="McKean County" />
+            <area shape="poly" coords="75,150,76,108,97,90,134,90,138,124,112,150,75,150" href="http://venango.pa.networkofcare.org/mh/" alt="Venango County" />
+            <area shape="poly" coords="284,38,282,92,301,110,353,110,351,39,283,39" href="http://potter.pa.networkofcare.org/mh/" alt="Potter County" />
+            <area shape="poly" coords="351,39,353,101,422,99,437,93,429,38,351,38" href="http://tioga.pa.networkofcare.org/mh/" alt="Tioga County" />
+            <area shape="poly" coords="17,159,1,176,19,198,56,196,56,176,65,166,51,159,15,157" href="http://lawrence.pa.networkofcare.org/mh/" alt="Lawrence County" />
+            <area shape="poly" coords="58,196,57,219,109,221,111,151,74,150,57,176,57,220" href="http://butler.pa.networkofcare.org/mh/" alt="Butler County" />
+            <area shape="poly" coords="56,196,58,226,35,247,15,248,16,198,55,196" href="http://beaver.pa.networkofcare.org/mh/" alt="Beaver County" />
+            <area shape="poly" coords="37,249,89,287,100,285,102,264,111,254,112,243,102,235,111,221,59,218,60,225,35,248" href="http://allegheny.pa.networkofcare.org/mh/" alt="Allegheny County" />
+            <area shape="poly" coords="14,248,16,321,39,313,62,317,66,314,75,322,89,311,94,304,89,286,34,248,12,248" href="http://washington.pa.networkofcare.org/mh/" alt="Washington County" />
+            <area shape="poly" coords="17,321,15,351,84,351,83,327,79,321,38,314,14,320" href="http://greene.pa.networkofcare.org/mh/" alt="Greene County" />
+            <area shape="poly" coords="430,38,438,92,510,100,514,85,523,85,521,38,430,37" href="http://bradford.pa.networkofcare.org/mh/" alt="Bradford County" />
+            <area shape="poly" coords="121,38,201,38,197,88,119,89,120,37" href="http://warren.pa.networkofcare.org/mh/" alt="Warren County" />
+            <area shape="poly" coords="134,89,139,122,142,122,143,115,166,117,167,130,181,126,183,116,196,116,196,88,133,89" href="http://forest.pa.networkofcare.org/mh/" alt="Forest County" />
+            <area shape="poly" coords="521,38,523,85,597,87,595,37,521,39" href="http://susquehanna.pa.networkofcare.org/mh/" alt="Susquehanna County" />
+            <area shape="poly" coords="278,144" href="#" alt="default"/>
+            <area shape="poly" coords="195,88,196,114,186,115,180,126,194,123,226,147,231,144,231,140,277,143,276,120,256,121,257,90,195,88" href="http://elk.pa.networkofcare.org/mh/" alt="Elk County" />
+            <area shape="poly" coords="257,90,257,120,276,120,278,143,295,145,307,123,305,110,282,91,256,89" href="http://cameron.pa.networkofcare.org/mh/" alt="Cameron County" />
+            <area shape="poly" coords="145,116,111,149,111,167,123,177,148,177,167,167,167,118,143,115" href="http://clarion.pa.networkofcare.org/mh/" alt="Clarion County" />
+            <area shape="poly" coords="166,129,166,187,212,188,223,145,194,123,166,130" href="http://jefferson.pa.networkofcare.org/mh/" alt="Jefferson County" />
+            <area shape="poly" coords="224,146,212,187,213,214,262,211,294,182,301,172,293,161,301,155,294,145,230,139,224,146" href="http://clearfield.pa.networkofcare.org/mh/" alt="Clearfield County" />
+            <area shape="poly" coords="110,168,111,221,134,239,165,206,167,168,148,177,121,178,109,169" href="http://armstrong.pa.networkofcare.org/mh/" alt="Armstrong County" />
+            <area shape="poly" coords="165,187,166,206,136,240,157,254,176,261,187,256,192,258,213,213,211,188,165,187" href="http://indiana.pa.networkofcare.org/mh/" alt="Indiana County" />
+            <area shape="poly" coords="111,221,104,235,111,245,112,253,101,263,100,284,90,288,91,295,119,301,134,294,156,308,170,299,192,259,187,255,177,262,141,247,110,221" href="http://westmoreland.pa.networkofcare.org/mh/" alt="Westmoreland County" />
+            <area shape="poly" coords="93,295,94,305,79,321,85,351,144,351,150,339,142,333,156,310,133,295,120,301,92,295" href="http://fayette.pa.networkofcare.org/mh/" alt="Fayette County" />
+            <area shape="poly" coords="183,277,169,299,156,310,143,333,150,338,143,351,212,350,220,337,219,305,230,281,200,281,199,276,183,276" href="http://somerset.pa.networkofcare.org/mh/" alt="Somerset County" />
+            <area shape="poly" coords="235,271,220,303,220,335,212,350,262,351,289,292,276,278,256,274,255,279,234,270" href="http://bedford.pa.networkofcare.org/mh/" alt="Bedford County" />
+            <area shape="poly" coords="289,292,263,350,297,351,322,306,308,298,290,290" href="http://fulton.pa.networkofcare.org/mh/" alt="Fulton County" />
+            <area shape="poly" coords="343,276,368,318,367,352,298,350,327,297,334,285" href="http://franklin.pa.networkofcare.org/mh/" alt="Franklin County" />
+            <area shape="poly" coords="367,352,423,350,426,326,417,309,404,305,366,318" href="http://adams.pa.networkofcare.org/mh/" alt="Adams County" />
+            <area shape="poly" coords="267,212,214,214,185,274,201,276,201,282,229,283" href="http://cambria.pa.networkofcare.org/mh/" alt="Cambria County" />
+            <area shape="poly" coords="267,213,236,270,254,278,255,273,277,275,292,247,282,221,292,210" href="http://blair.pa.networkofcare.org/mh/" alt="Blair County" />
+            <area shape="poly" coords="302,155,316,141,318,151,330,151,333,160,345,159,362,180,402,172,379,194,337,215,322,213,312,219,291,210,264,210,301,173,294,161" href="http://centre.pa.networkofcare.org/mh/" alt="Centre County" />
+            <area shape="poly" coords="306,109,309,121,295,145,304,154,314,141,318,150,330,151,332,160,345,158,362,179,405,168,350,110" href="http://clinton.pa.networkofcare.org/mh/" alt="Clinton County" />
+            <area shape="poly" coords="324,304,340,277,332,262,323,263,318,255,326,245,322,239,341,220,340,215,322,214,312,219,293,211,283,222,292,246,278,278,288,289" href="http://huntingdon.pa.networkofcare.org/mh/" alt="Huntingdon County" />
+            <area shape="poly" coords="378,195,377,217,386,217,363,230,363,233,333,261,322,261,318,254,327,243,323,238,342,214" href="http://mifflin.pa.networkofcare.org/mh/" alt="Mifflin County" />
+            <area shape="poly" coords="406,167,425,164,425,154,431,155,441,152,435,148,435,139,472,139,473,147,484,137,467,133,450,120,442,94,438,92,424,98,352,101,351,112" href="http://lycoming.pa.networkofcare.org/mh/" alt="Lycoming County" />
+            <area shape="poly" coords="436,140,472,139,477,146,464,154,468,168,476,184,465,180,454,179,447,183,450,168,452,153,437,150" href="http://montour.pa.networkofcare.org/mh/" alt="Montour County" />
+            <area shape="poly" coords="434,155,424,155,423,166,406,166,379,195,380,200,423,191,443,192,436,179" href="http://union.pa.networkofcare.org/mh/" alt="Union County" />
+            <area shape="poly" coords="442,93,450,120,470,134,483,136,488,133,500,132,510,100" href="http://sullivan.pa.networkofcare.org/mh/" alt="Sullivan County" />
+            <area shape="poly" coords="334,263,342,275,375,247,397,238,402,232,426,226,409,219,387,219,361,229" href="http://juniata.pa.networkofcare.org/mh/" alt="Juniata County" />
+            <area shape="poly" coords="378,202,379,217,411,217,427,226,437,215,437,205,444,193,415,193" href="http://snyder.pa.networkofcare.org/mh/" alt="Snyder County" />
+            <area shape="poly" coords="430,227,436,214,444,195,437,178,434,155,441,150,452,153,448,182,461,179,476,182,471,187,480,198,488,197,491,204,456,222" href="http://northumberland.pa.networkofcare.org/mh/" alt="Northumberland County" />
+            <area shape="poly" coords="466,155,475,185,471,186,482,199,486,198,492,205,500,202,501,193,512,181,508,156,499,149,499,131,484,134" href="http://columbia.pa.networkofcare.org/mh/" alt="Columbia County" />
+            <area shape="poly" coords="502,122,538,123,554,118,562,107,566,86,513,86" href="http://wyoming.pa.networkofcare.org/mh/" alt="Wyoming County" />
+            <area shape="poly" coords="504,122,499,134,499,149,510,157,513,182,534,188,566,172,559,167,565,160,568,158,576,157,582,151,571,132,554,117,539,124" href="http://luzerne.pa.networkofcare.org/mh/" alt="Luzerne County" />
+            <area shape="poly" coords="421,231,426,245" href="#" alt="default"/>
+            <area shape="poly" coords="409,304,438,283,429,270,377,275,349,286,366,315,377,313" href="http://cumberland.pa.networkofcare.org/mh/" alt="Cumberland County" />
+            <area shape="poly" coords="344,275,351,286,376,275,428,268,418,264,426,247,420,229,401,234,374,246" href="http://perry.pa.networkofcare.org/mh/" alt="Perry County" />
+            <area shape="poly" coords="407,305,417,309,427,325,423,352,512,352,475,308,460,307,454,291,437,282" href="http://york.pa.networkofcare.org/mh/" alt="York County" />
+            <area shape="poly" coords="419,229,424,247,419,264,425,265,437,282,455,292,470,287,460,249,474,239,455,222,426,226" href="http://dauphin.pa.networkofcare.org/mh/" alt="Dauphin County" />
+            <area shape="poly" coords="473,239,461,248,469,288,518,270" href="http://lebanon.pa.networkofcare.org/mh/" alt="Lebanon County" />
+            <area shape="poly" coords="456,223,486,245,536,232,536,227,564,213,535,188,512,182,500,194,500,201" href="http://schuylkill.pa.networkofcare.org/mh/" alt="Schuylkill County" />
+            <area shape="poly" coords="537,188,561,212,596,202,587,185,596,176,579,156,560,166,566,173" href="http://carbon.pa.networkofcare.org/mh/" alt="Carbon County" />
+            <area shape="poly" coords="456,294,460,305,474,306,515,352,522,353,539,331,542,298,547,294,517,270" href="http://lancaster.pa.networkofcare.org/mh/" alt="Lancaster County" />
+            <area shape="poly" coords="488,247,547,295,573,278,590,251,552,219,535,232" href="http://berks.pa.networkofcare.org/mh/" alt="Berks County" />
+            <area shape="poly" coords="543,297,539,329,522,352,562,351,568,339,582,334,608,303,576,278" href="http://chester.pa.networkofcare.org/mh/" alt="Chester County" />
+            <area shape="poly" coords="583,334,603,340,583,354,586,363,637,364,637,355,616,356,613,335,624,335,621,323,607,306" href="http://delaware.pa.networkofcare.org/mh/" alt="Delaware county" />
+            <area shape="poly" coords="589,253,648,295,637,305,623,300,620,306,626,312,619,316,574,279" href="http://montgomery.pa.networkofcare.org/mh/" alt="Montgomery County" />
+            <area shape="poly" coords="619,318,627,345,691,344,689,334,643,315,650,311,656,301,646,294,637,308,625,301,619,304,626,311" href="http://philadelphia.pa.networkofcare.org/mh/" alt="Philadelphia COunty" />
+            <area shape="poly" coords="597,255,658,303,686,295,656,257,643,253,644,236,629,228,605,243" href="http://bucks.pa.networkofcare.org/mh/" alt="Bucks County" />
+            <area shape="poly" coords="551,220,595,256,610,240,605,224,581,206" href="http://lehigh.pa.networkofcare.org/mh/" alt="Lehigh County" />
+            <area shape="poly" coords="583,206,604,221,610,241,630,229,630,215,672,216,674,204,638,203,645,196,637,179,617,196" href="http://northampton.pa.networkofcare.org/mh/" alt="Northampton County" />
+            <area shape="poly" coords="577,155,596,175,587,186,594,201,615,197,657,162,634,157,635,140,598,142,586,145" href="http://monroe.pa.networkofcare.org/mh/" alt="Monroe County" />
+            <area shape="poly" coords="582,150,600,138,600,120,622,119,623,113,599,112,595,87,564,88,556,118" href="http://lackawanna.pa.networkofcare.org/mh/" alt="Lackawanna County" />
+            <area shape="poly" coords="597,39,597,99,600,111,623,111,623,120,600,118,598,142,613,141,627,117,646,89,643,57,611,37" href="http://wayne.pa.networkofcare.org/mh/" alt="Wayne County" />
+            <area shape="poly" coords="643,95,613,140,634,140,634,155,654,162,688,126,681,115,653,111" href="http://pike.pa.networkofcare.org/mh/" alt="Pike County" />
+        </map>
+    </div>
+</div>
